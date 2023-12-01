@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'store'
+    'store',
+    "django_cleanup",
+    # "accounts.apps.AccountsConfig",
 ]
 
 MIDDLEWARE = [
@@ -144,4 +146,5 @@ LOGGING = {
    },
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.emailbackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
